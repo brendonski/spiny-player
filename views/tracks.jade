@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  #tracks
+    - each track in tracks
+      div.track
+        div.title
+          a(href="/track/"+track)!= track
